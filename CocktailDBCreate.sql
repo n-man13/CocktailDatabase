@@ -41,7 +41,9 @@ INSERT INTO `Ingredients` (`IngredientName`) VALUES
   ('Club Soda'),
   ('Aromatic Bitters'),
   ('Tequila'),
-  ('Cointreau');
+  ('Cointreau'),
+  ('Strawberry Liqueur'),
+  ('Elderflower Liqueur');
 
 
 -- -----------------------------------------------------
@@ -63,7 +65,8 @@ INSERT INTO `Flavor`(`Flavor`) VALUES
   ('Sour'),
   ('Salty'),
   ('Tangy'),
-  ('Bubbly');
+  ('Bubbly'),
+  ('Earthy');
 
 
 -- -----------------------------------------------------
@@ -172,7 +175,8 @@ INSERT INTO `Cocktails` (`CocktailID`, `CocktailName`, `CocktailAlias`, `Cocktai
   (NULL, 'Margarita', NULL, NULL, NULL, 'Margarita', 5, 7, 'Blend'),
   (NULL, 'Moscow Mule', NULL, 'Chill mug beforehand for crisper taste', NULL, 'Copper Mug', 6, 6, 'Pour'),
   (NULL, 'Cosmopolitan', NULL, NULL, 'Martini',1, NULL, 'Shake'),
-  (NULL, 'Mojito', NULL, NULL, 'Collins', 8, 9, 'Muddle');
+  (NULL, 'Mojito', NULL, NULL, 'Collins', 8, 9, 'Muddle'),
+  (NULL, 'Strawberry Flower', 'Strawberry Gin', NULL, NULL, 'Highball', 10, 4, 'Shake');
   
 
 -- -----------------------------------------------------
@@ -216,7 +220,12 @@ INSERT INTO `Recipe` (`CocktailID`, `IngredientID`, `IngredientAmount`) VALUES
   (207, 2, 60),
   (207, 11, 100),
   (208, 4, 60),
-  (208, 14, 15);
+  (208, 14, 15),
+  (209, 3, 30),
+  (209, 14, 15),
+  (209, 19, 5),
+  (209, 22, 10),
+  (209, 23, 5);
   
 
 -- -----------------------------------------------------
